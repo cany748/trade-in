@@ -1,0 +1,361 @@
+.trade-in
+  padding 125px 0
+  // overflow hidden
+
+.trade-in__title
+  font-size 32px
+  font-weight 700
+
+.trade-in__text
+  font-size 18px
+  margin-top 10px
+
+.trade-in__list
+  display flex
+  flex-wrap wrap
+  margin 0 -8px
+  &_center
+    justify-content center
+
+.trade-in-item
+  width calc(25% - 16px)
+  box-sizing border-box
+  display flex
+  align-items center
+  background $color-white
+  border 1px solid #D8D8D8
+  border-radius 30px
+  cursor pointer
+  margin 0 8px 20px
+
+  &__icon
+    box-sizing border-box
+    display flex
+    justify-content center
+    align-items center
+    position relative
+    border-radius 50%
+    background linear-gradient(90deg, #C9D6FF 0%, #E2E2E2 100%)
+    transition $transition-main
+    padding 15px
+    & img
+      display block
+      position relative
+      z-index 1
+    & span
+      position absolute
+      color #91919f
+      font-size 14px
+      transform translate(-50%, -50%)
+      z-index 1
+      margin-top 5px
+      top 50%
+      left 50%
+    &:before
+      content ''
+      size 100%
+      position absolute
+      border-radius 50%
+      background linear-gradient(135deg, #FFA051 0%, #FF6628 100%)
+      transition $transition-main
+      opacity 0
+      z-index 0
+    &:after
+      content ''
+      size 32px
+      display block
+      position absolute
+      background $color-green
+      background-image url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2210%22 height=%227%22 viewBox=%220 0 10 7%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22 preserveAspectRatio=%22none%22%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd%7D%3C/style%3E%3Cpath class=%22cls-1%22 fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M9.22 0L3.101 5.591.781 3.471 0 4.183 2.712 6.66l.39.34.39-.34L10 .714 9.22 0z%22/%3E%3C/svg%3E")
+      background-size 10px 8px
+      background-repeat no-repeat
+      background-position center
+      border-radius 50%
+      transition $transition-main
+      opacity 0
+      z-index 2
+      bottom -14px
+
+  &__text
+    display flex
+    justify-content center
+    align-items center
+    text-align center
+    font-weight 600
+    overflow hidden
+
+  &:hover &__icon:before, &.is-active &__icon:before, &.is-checked &__icon:before, &.is-checked &__icon:after
+    opacity 1
+
+  &_lg
+    height 286px
+    flex-direction column
+    & .trade-in-item__icon
+      size 128px
+      margin-top 40px
+    & .trade-in-item__text
+      height 90px
+      font-size 20px
+      padding 0 15px
+      margin-top 5px
+
+  &_md
+    height 112px
+    padding 0 13px
+    & .trade-in-item__icon
+      size 64px
+      margin-right 10px
+    & .trade-in-item__text
+      flex 1
+      font-size 18px
+
+.trade-in-slider
+  padding-top 35px
+  &__range
+    max-width 760px
+    height 12px
+    position relative
+    border 0
+    border-radius 0
+    background linear-gradient(90deg, #FF6A00 0%, #00B440 100%)
+    box-shadow 0px 5px 10px rgba(207, 111, 138, 0.15)
+    margin 0 auto
+    &[value='1'] .noUi-handle
+      background-image url("/assets/images/trade-in/emoji-grimacing-face-x70.png")
+    &[value='2'] .noUi-handle
+      background-image url("/assets/images/trade-in/emoji-confused-face-x70.png")
+    &[value='3'] .noUi-handle
+      background-image url("/assets/images/trade-in/emoji-slightly-smiling-face-x70.png")
+    &[value='4'] .noUi-handle
+      background-image url("/assets/images/trade-in/emoji-smiling-face-x70.png")
+    &[value='5'] .noUi-handle
+      background-image url("/assets/images/trade-in/emoji-star-struck-x70.png")
+
+  &__decor
+    size 30px 8px
+    position absolute
+    background #cacaca
+    top 2px
+    &:before
+      content ''
+      size 8px 40px
+      display block
+      position absolute
+      border-radius 3px
+      background #cacaca
+      top -16px
+
+    &_left
+      left -30px
+      &:before
+        right 0
+
+    &_right
+      right -30px
+      &:before
+        left 0
+
+  &__tooltip
+    size 340px 210px
+    box-sizing border-box
+    position relative
+    background $color-white
+    border-radius 30px
+    padding 40px
+    margin 70px auto 0
+    &:before
+      content ''
+      size 50px 28px
+      position absolute
+      background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 49.7 28' enable-background='new 0 0 49.7 28'%3E%3Cpath d='M25 0v28h24.8c-15.2 0-22.9-18.7-24.8-28zM25 28v-28c-2 9.3-9.8 28-25 28h25z' fill='%23fff'/%3E%3C/svg%3E")
+      top -28px
+      left calc(50% - 25px)
+
+  &__title
+    display block
+    font-size 20px
+    font-weight 600
+
+  &__text
+    color #676767
+
+  .noUi-handle
+    size 70px
+    border none
+    box-shadow none
+    transition $transition-main
+    background none
+    background-size 100%
+    top -35px
+    right -35px
+    &:after, &:before
+      content none
+
+.trade-in-form
+  max-width 570px
+  box-sizing border-box
+  position relative
+  border-radius 25px
+  background $color-white
+  padding 20px 90px 50px
+  margin 0 auto
+
+  .button
+    font-weight 700
+    margin-top 10px
+
+  .button_orange.button_nobg
+    color $color-orange
+    &:hover
+      color $color-white
+
+  &__price-title
+    color #676767
+    text-align center
+    margin-top 40px
+
+  &__price
+    font-size 32px
+    font-weight 600
+    text-align center
+    margin-bottom 15px
+
++do(1000)
+  .trade-in__list
+    margin 0 -5px
+
+  .trade-in-item
+    margin-right 5px
+    margin-left 5px
+    &_lg
+      width calc(25% - 10px)
+
+    &_md
+      width calc(33.33% - 10px)
+
++do(900)
+  .trade-in
+    padding-top 0px
+    padding-bottom 80px
+    &__title
+      font-size 28px
+    &__text
+      font-size 16px
+      margin-top 0
+
+  .trade-in-item
+    .trade-in-item__text
+      font-size 16px
+    .trade-in-item__icon:after
+      size 22px
+      bottom -11px
+
+  .trade-in-item_lg
+    height 200px
+    .trade-in-item__icon
+      size 92px
+      padding 25px
+      margin-top 30px
+
+    .trade-in-item__text
+      height 65px
+
+  .trade-in-slider
+    &__range
+      size 500px 8px
+
+    &__decor
+      size 20px 6px
+      top 1px
+      &:before
+        size 6px 30px
+        top -12px
+
+      &_left
+        left -20px
+
+      &_right
+        right -20px
+
+    .noUi-handle
+      size 50px
+      top -25px
+      right -25px
+
++do(750)
+  .trade-in-slider
+    padding-top 60px
+
+  .trade-in-item_md
+    height 80px
+    border-radius 20px
+    margin-bottom 10px
+    .trade-in-item__icon
+      size 50px
+      padding 12px
+      margin-right 10px
+    .trade-in-item__text
+      font-size 14px
+
+
++do(700)
+  .trade-in-item_lg
+    width calc(33.33% - 10px)
+
++do(650)
+  .trade-in-item_md
+    width calc(50% - 10px)
+
+
++do(600)
+  .trade-in
+    padding-top 50px
+
+  .trade-in-slider__range
+    width calc(100% - 40px)
+
++do(580)
+  .trade-in-form
+    width 440px
+
++do(500)
+  .trade-in
+    &__title
+      font-size 24px
+    &__text
+      font-size 14px
+
+  .trade-in__list
+    margin 0 -8px
+    &_center
+      justify-content flex-start
+
+  .trade-in-item_lg
+      width calc(50% - 16px)
+      margin-right 8px
+      margin-left 8px
+
+  .trade-in-form
+    width 340px
+    padding-right 40px
+    padding-bottom 60px
+    padding-left 40px
+    .button
+      font-size 14px
+
++do(450)
+  .trade-in
+    padding-top 20px
+
+  .trade-in-item_lg
+    .trade-in-item__text
+      font-size 14px
+      line-height 18px
+
+  .trade-in-item_md
+    .trade-in-item__text
+      font-size 12px
+    .trade-in-item__icon
+      size 40px
+      padding 7px
+      margin-right 8px

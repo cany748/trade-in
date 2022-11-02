@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="/assets/css/vendor.css?000011" type="text/css">
+  <link rel="stylesheet" href="/assets/css/common.css?000011" type="text/css">
+</head>
+
+<body class="body">
+  <div class="body__wrapper">
+    <div class="body__header">
+      <header class="header block">
+        <div class="header-main block">
+          <div class="header-main__wrapper block-wrapper">
+            <a href="/" class="header-main__logo">
+              <img src="/assets/images/logo-text.svg" alt="Логотип">
+            </a>
+            <div class="header-main-location" style="visibility: hidden;">
+              <span class="header-main-location__name">ТЦ “Сувар Плаза”</span>
+              <a href="#" class="header-main-location__button" role="button" js-open-layer="main/address-1">Как
+                добраться</a>
+            </div>
+            <div class="header-main-location">
+              <span class="header-main-location__name">ГТРК “Корстон”</span>
+              <a href="#" class="header-main-location__button" role="button" js-open-layer="main/address-2">Как
+                добраться</a>
+            </div>
+            <div class="header-main-tel">
+              <a href="tel:+78432070155" class="header-main-tel__number zphone">+7 (843) 207-01-55</a>
+              <a href="#" class="header-main-tel__button" role="button" js-open-layer="main/callback">заказать обратный
+                звонок</a>
+            </div>
+            <button class="button header-main__button" js-open-layer="main/callback-out">Выезд мастера</button>
+          </div>
+        </div>
+        <div class="header-nav block">
+          <div class="header-nav__wrapper block-wrapper">
+            <a href="/service/apple/remont-iphone/" class="header-nav__item">Ремонт iPhone</a>
+            <a href="/service/apple/remont-ipad/" class="header-nav__item">Ремонт iPad</a>
+            <a href="/service/remont-telefonov/" class="header-nav__item">Ремонт телефонов</a>
+            <a href="/contacts" class="header-nav__item">Контакты</a>
+            <a href="/contacts" class="header-nav__item">Trade In</a>
+            <button class="button header-nav__button" js-open-layer="main/callback-out">Выезд мастера</button>
+          </div>
+        </div>
+        <div class="header-mobile block">
+          <div class="header-mobile__wrapper block-wrapper">
+            <a href="/" class="header-mobile__logo">
+              <img src="/assets/images/logo.svg" alt="Логотип">
+            </a>
+            <div class="header-mobile__locations">
+              <span>ГТРК “Корстон”</span>
+            </div>
+            <div class="flex-next"></div>
+            <a href="tel:+78432070155" class="header-mobile__tel zphone">+7 (843) 207-01-55</a>
+            <button class="header-mobile__button" js-open-layer="mobile/menu"></button>
+          </div>
+          <div class="header-mobile__title">Ремонт мобильных устройств в Казани</div>
+        </div>
+      </header>
+    </div>
+    <div class="body__content">
+      <div class="base base_trade-in block">
+        <div class="base__wrapper block-wrapper">
+          <div class="base__decor">
+            <img src="/assets/images/decor-2.svg" alt="">
+          </div>
+          <div class="base__main">
+            <h1 class="base__title">Trade In</h1>
+            <div class="base__text">
+              Выгодно продайте или поменяйте
+              вашу технику
+            </div>
+            <button class="button button_orange button_nobg">Оставить заявку</button>
+            <div class="base__contacts">
+              <div class="base__contacts-title">Получи бесплатную консультацию</div>
+              <div class="base__contacts-items">
+                <a href="" target="_blank" class="base__contacts-item base__contacts-item_whatsapp"></a>
+                <a href="" target="_blank" class="base__contacts-item base__contacts-item_telegram"></a>
+                <a href="" target="_blank" class="base__contacts-item base__contacts-item_vk"></a>
+                <a href="" class="base__contacts-item base__contacts-item_phone zphone">+7 (843) 207-01-55</a>
+              </div>
+            </div>
+          </div>
+          <div class="base__side">
+            <div class="base__side-img">
+              <img src="/assets/images/trade-in-top-image.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script> window.TradeIn = [
+        {
+          "name": "iPhone",
+          "models": [
+            {
+              "id": "17",
+              "type": "iPhone",
+              "name": "iPh0",
+              "baseprice": "4500",
+              "memory": [
+                {
+                  "name": "128Гб",
+                  "price": 100500
+                },
+                {
+                  "name": "512Гб",
+                  "price": 100500
+                },
+                {
+                  "name": "1Тб",
+                  "price": 100500
+                },
+                {
+                  "name": "2Тб",
+                  "price": 100500
+                }
+              ],
+              "status": [
+                30,
+                30,
+                40,
+                70,
+                100
+              ],
+              "equipment": [
+                {
+                  "name": "Коробка",
+                  "price": 500
+                },
+                {
+                  "name": "Адаптер питания",
+                  "price": 500
+                },
+                {
+                  "name": "Кабель",
+                  "price": 500
+                },
+                {
+                  "name": "Наушники",
+                  "price": 500
+                }
+              ],
+              "published": "0",
+              "sort": "30"
+            },
+            {
+              "id": "22",
+              "type": "iPhone",
+              "name": "iPhone 6S",
+              "baseprice": "10000",
+              "memory": [
+                {
+                  "name": "16Гб",
+                  "price": 1000
+                },
+                {
+                  "name": "32Гб",
+                  "price": 2000
+                },
+                {
+                  "name": "64Гб",
+                  "price": 3000
+                }
+              ],
+              "status": [
+                10,
+                500,
+                800,
+                1200,
+                1500
+              ],
+              "equipment": [
+                {
+                  "name": "Коробка",
+                  "price": 100
+                },
+                {
+                  "name": "Адаптер питания",
+                  "price": 200
+                },
+                {
+                  "name": "Кабель",
+                  "price": 200
+                }
+              ],
+              "published": "1",
+              "sort": "2"
+            },
+            {
+              "id": "20",
+              "type": "iPhone",
+              "name": "OWE ",
+              "baseprice": "200",
+              "memory": [],
+              "status": [
+                10,
+                10,
+                10,
+                10,
+                20
+              ],
+              "equipment": [],
+              "published": "1",
+              "sort": "0"
+            }
+          ]
+        },
+        {
+          "name": "iPad",
+          "models": [
+            {
+              "id": "13",
+              "type": "iPad",
+              "name": "ZCZCXCZX",
+              "baseprice": "23230",
+              "memory": [
+                {
+                  "name": "16Гб",
+                  "price": 50
+                },
+                {
+                  "name": "32Гб",
+                  "price": 50
+                },
+                {
+                  "name": "64Гб",
+                  "price": 50
+                },
+                {
+                  "name": "256Гб",
+                  "price": 50
+                }
+              ],
+              "status": [
+                10,
+                20,
+                20,
+                100,
+                120
+              ],
+              "equipment": [
+                {
+                  "name": "Коробка",
+                  "price": 30
+                },
+                {
+                  "name": "Адаптер питания",
+                  "price": 30,
+                  "checked": true
+                },
+                {
+                  "name": "Кабель",
+                  "price": 30
+                }
+              ],
+              "published": "1",
+              "sort": "0"
+            },
+            {
+              "id": "21",
+              "type": "iPad",
+              "name": "zxczxc",
+              "baseprice": "10",
+              "memory": [],
+              "status": [
+                10,
+                40,
+                70,
+                70,
+                90
+              ],
+              "equipment": [],
+              "published": "1",
+              "sort": "0"
+            }
+          ]
+        }
+      ]</script>
+      <div id="app"></div>
+      <div class="consultation consultation_small block">
+        <div class="consultation__wrapper block-wrapper">
+          <div class="consultation__body">
+            <div class="consultation__title">Есть вопросы?<br>Получи бесплатную консультацию</div>
+            <div class="consultation__links">
+              <a href="#" target="_blank" class="consultation__link consultation__link_whatsapp"></a>
+              <a href="#" target="_blank" class="consultation__link consultation__link_telegram"></a>
+              <a href="#" target="_blank" class="consultation__link consultation__link_vk"></a>
+              <a href="#" class="consultation__link consultation__link_phone"></a>
+            </div>
+            <a href="#" class="consultation__button button button_orange zphone">+7 (843) 207 - 01 - 55</a>
+          </div>
+        </div>
+      </div>
+      <div class="advantages advantages_trade-in block">
+        <div class="advantages__wrapper block-wrapper">
+          <div class="advantages__title">Почему стоит обратиться именно к нам</div>
+          <div class="advantages__items">
+            <div class="advantages__item advantages-item advantages-item_percent">
+              <div class="advantages-item__img">
+                <img data-src="/assets/images/advantages-percent.png" class="lazyload" alt="">
+              </div>
+              <div class="advantages-item__title">Выкуп или скидка</div>
+              <div class="advantages-item__text">Не просто даём скидку на новую технику - выкупим по выгодной для Вас
+                цене.</div>
+            </div>
+            <div class="advantages__item advantages-item advantages-item_wallet">
+              <div class="advantages-item__img">
+                <img data-src="/assets/images/advantages-wallet.png" class="lazyload" alt="">
+              </div>
+              <div class="advantages-item__title">Деньги сразу</div>
+              <div class="advantages-item__text">В случае выкупа Вам не нужно ждать ни минуту - мы дадим деньги за
+                устройство сразу.</div>
+            </div>
+            <div class="advantages__item advantages-item advantages-item_calc">
+              <div class="advantages-item__img">
+                <img data-src="/assets/images/advantages-calc.png" class="lazyload" alt="">
+              </div>
+              <div class="advantages-item__title">Лучшая цена</div>
+              <div class="advantages-item__text">Мы готовы гарантировать лучшую цену по Trade In в нашем любимом городе.
+              </div>
+            </div>
+            <div class="advantages__item advantages-item advantages-item_clock">
+              <div class="advantages-item__img">
+                <img data-src="/assets/images/advantages-clock2.png" class="lazyload" alt="">
+              </div>
+              <div class="advantages-item__title">Очень быстро</div>
+              <div class="advantages-item__text">Проводим оценку и диагностику в среднем за 12 минут и точно не дольше
+                30 минут.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-working how-working_trade-in block">
+        <div class="how-working__wrapper block-wrapper">
+          <div class="how-working__roadmap">
+            <div class="how-working__roadmap-points">
+              <div class="how-working__roadmap-point how-working__roadmap-point_active"></div>
+              <div class="how-working__roadmap-point"></div>
+              <div class="how-working__roadmap-point"></div>
+            </div>
+            <div class="how-working__roadmap-items">
+              <div class="how-working__roadmap-item how-working__roadmap-item_active">
+                <b>Посещение магазина</b>
+                <span>Перед посещением нашего магазина Вы можете оценить устройство самостоятельно в нашем калькуляторе
+                  или просто сразу прийти к нам, не забыв с собой устройство и его комплект, если такой имеется.</span>
+              </div>
+              <div class="how-working__roadmap-item">
+                <b>Быстрая диагностика<br>и оценка устройства</b>
+                <span>Наш специалист проведёт диагностику и оценку Вашего устройства, в это время Вы можете отдохнуть с
+                  чашкой кофе или выбрать себе аксессуары. При себе необходимо иметь паспорт.</span>
+              </div>
+              <div class="how-working__roadmap-item">
+                <b>Выкуп устройства<br>и скидка на любое новое</b>
+                <span>После диагностики и оценки специалист назовёт точную стоимость выкупа. В случае согласия мы
+                  выкупим устройство за эту цену, либо предоставим Вам аналогичную скидку на новую технику.</span>
+              </div>
+            </div>
+          </div>
+          <div class="how-working__side">
+            <div class="how-working__title">Как проходит<br>процесс <span>Trade&nbsp;In</span></div>
+            <div class="how-working__img"><img data-src="/assets/images/how-working-illustration_trade-in.png"
+                class="lazyload" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="consultation consultation_big block">
+        <div class="consultation__wrapper block-wrapper">
+          <div class="consultation__title consultation__title">Запись на ремонт / консультация</div>
+          <div class="consultation__body">
+            <div class="consultation__links">
+              <a href="{$_modx->config.whatsapp_link}" target="_blank"
+                class="consultation__link consultation__link_whatsapp"></a>
+              <a href="{$_modx->config.telegram_link}" target="_blank"
+                class="consultation__link consultation__link_telegram"></a>
+              <a href="{$_modx->config.vk_link}" target="_blank" class="consultation__link consultation__link_vk"></a>
+              <a href="{$_modx->config.phone_link}" class="consultation__link consultation__link_phone"></a>
+            </div>
+            <div class="consultation__buttons">
+              <a js-open-layer="main/callback" href="#" role="button" class="consultation__button button">Позвоните
+                мне</a>
+              <span class="consultation__or">или</span>
+              <a href="{$_modx->config.phone_link}" class="consultation__button button button_orange zphone">+7 (843)
+                207 - 01 - 55</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div itemprop="articleBody" class="description block">
+        <div class="description__wrapper block-wrapper">
+          <div class="description__text">
+            Программа трейд-ин — это умный, удобный и экологичный способ покупки новых устройств. Теперь вам есть куда
+            принести свои устройства Apple, которые вы решили обновить, получить при этом выгоду себе и принести пользу
+            окружающей среде.
+          </div>
+          <div class="description__links">
+            <div class="description__prompt">Поделиться</div>
+            <a href="https://www.facebook.com/sharer.php?src=sp&u={$_modx->makeUrl($_modx->resource.id, '', '', 'full') | urlencode}"
+              target="_blank" class="description__link description__link_facebook"></a>
+            <a href="https://twitter.com/intent/tweet?url={$_modx->makeUrl($_modx->resource.id, '', '', 'full') | urlencode}"
+              target="_blank" class="description__link description__link_twitter"></a>
+            <a href="https://vk.com/share.php?url={$_modx->makeUrl($_modx->resource.id, '', '', 'full') | urlencode}"
+              target="_blank" class="description__link description__link_vk"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body__footer">
+      <footer class="footer block">
+        <div class="footer__top">
+          <div class="footer__wrapper block-wrapper">
+            <div class="footer-item footer-item_nav footer-item_M-hidden">
+              <span class="footer-item__title">Услуги</span>
+              <a class="footer-item__link" href="/service/apple/remont-iphone/" role="button">Ремонт iPhone</a>
+              <a class="footer-item__link" href="/service/apple/remont-ipad/" role="button">Ремонт iPad</a>
+              <a class="footer-item__link" href="/service/remont-telefonov/" role="button">Ремонт телефонов</a>
+            </div>
+            <div class="footer-item footer-item_nav">
+              <span class="footer-item__title">Сервис</span>
+              <a href="#" class="footer-item__link"
+                onclick="__GCW_Controller.sidebarToggle('https://iservicegroup.gincore.net/widget/quick_repair', '.a-code'); return false">Ремонт
+                по записи</a>
+              <a href="#" class="footer-item__link"
+                onclick="__GCW_Controller.sidebarToggle('https://iservicegroup.gincore.net/widget/status', 'status-widget'); return false">Узнать
+                статус ремонта</a>
+              <a href="#" class="footer-item__link"
+                onclick="__GCW_Controller.sidebarToggle('https://iservicegroup.gincore.net/widget/feedback'); return false">Оставить
+                отзыв</a>
+            </div>
+            <div class="footer-item footer-item_nav">
+              <span class="footer-item__title">Информация</span>
+              <a class="footer-item__link" href="/warranty">Гарантия и возврат</a>
+              <a class="footer-item__link" href="/actions">Акции и скидки</a>
+              <a class="footer-item__link" href="/about">О Компании</a>
+              <a class="footer-item__link" href="/contacts">Контакты</a>
+            </div>
+            <div class="footer-item footer-item_contacts">
+              <span class="footer-item__title">Контакты</span>
+              <span class="footer-item__place">г. Казань. ул. Н.Ершова, д. 1а, “Корстон”, 1й этаж с 10:00 до
+                22:00</span>
+              <div class="footer-item__socs">
+                <a href="#" target="_blank" class="footer-item__soc footer-item__soc_facebook"></a>
+                <a href="#" target="_blank" class="footer-item__soc footer-item__soc_vk"></a>
+                <a href="#" target="_blank" class="footer-item__soc footer-item__soc_instagram"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__wrapper block-wrapper">
+            <div class="footer__copyright">© Meront.ru, 2011-2021.</div>
+            <div class="footer__rights">Все права защищены.</div>
+            <div class="footer__payments footer__payments_card"><img src="/assets/images/payments-card.svg" alt="">
+            </div>
+            <div class="footer__payments footer__payments_cash"><img src="/assets/images/payments-cash.svg" alt="">
+            </div>
+            <a href="/policy" target="_blank" class="footer__policy">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__bottom footer__bottom_mobile">
+          <div class="footer__wrapper block-wrapper">
+            <div class="footer__columns">
+              <div class="footer__column">
+                <div class="footer-item__socs">
+                  <a href="#" target="_blank" class="footer-item__soc footer-item__soc_facebook"></a>
+                  <a href="#" target="_blank" class="footer-item__soc footer-item__soc_vk"></a>
+                  <a href="#" target="_blank" class="footer-item__soc footer-item__soc_instagram"></a>
+                </div>
+                <a href="/policy" target="_blank" class="footer__policy">Политика конфиденциальности</a>
+                <div class="footer__copyright">© Meront.ru, 2011-{'' | date : 'Y'}.</div>
+              </div>
+              <div class="footer__column">
+                <div class="footer__payments footer__payments_card"><img src="/assets/images/payments-card.svg" alt="">
+                </div>
+                <div class="footer__payments footer__payments_cash"><img src="/assets/images/payments-cash.svg" alt="">
+                </div>
+                <div class="footer__rights">Все права защищены.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="/assets/js/vendor.js?000011"></script>
+  <script src="/assets/js/common.js?000011"></script>
+  <script>
+    app.start();
+
+  </script>
+</body>
+
+</html>
